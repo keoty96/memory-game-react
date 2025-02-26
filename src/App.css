@@ -4,3 +4,8 @@
   padding: 2rem;
   text-align: center;
 }
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}

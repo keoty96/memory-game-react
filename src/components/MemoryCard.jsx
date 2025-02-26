@@ -8,7 +8,9 @@ export default function MemoryCard(props) {
         <div className='card-wrapper'>
             { emojis.map((item, index) => (
                 <div className="card" key={index}>
-                    <span>{decodeEntity(item.htmlCode[0])}</span>
+                    <button onClick={() => props.handleClick(item.name, index)}>
+                        {decodeEntity(item.htmlCode[0])}
+                    </button>
                 </div>
             ))}
         </div>
