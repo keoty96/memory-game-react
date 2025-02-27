@@ -22,8 +22,8 @@ function App() {
     }
   },[matchedCards])
 
-  console.log("is game over: " + isGameOver)
-  console.log(matchedCards)
+  //console.log("is game over: " + isGameOver)
+  //console.log(matchedCards)
 
   async function startGame(e) {
     e.preventDefault();
@@ -86,11 +86,18 @@ function App() {
     } 
   }
 
-  console.log(selectedCards);
+  //console.log(selectedCards);
 
   return (
     <>
-    { isGameOn ? <MemoryCard handleClick={turnCard} emojis={emojisData} /> : <Form startGame={startGame} /> }
+    { isGameOn ? 
+      <MemoryCard 
+        handleClick={turnCard} 
+        emojis={emojisData} 
+        selectedCards={selectedCards}
+        matchedCards={matchedCards}  
+      /> : 
+      <Form startGame={startGame} /> }
     </>
   )
 }

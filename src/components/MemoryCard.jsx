@@ -1,19 +1,34 @@
-import {decodeEntity} from 'html-entities';
+import { decodeEntity } from "html-entities";
 
-export default function MemoryCard(props) {
+export default function MemoryCard({
+  handleClick,
+  emojis,
+  selectedCards,
+  matchedCards,
+}) {
+  return (
+    <div className="card-wrapper">
+      {emojis.map((item, index) => {
+        const selectedCardEntry = selectedCards.find(
+          (emoji) => emoji.index === index
+        );
 
-    const emojis = props.emojis;
+        const matchedCardEntry = matchedCards.find(
+          (emoji) => emoji.index === index
+        );
 
-    return(
-        <div className='card-wrapper'>
-            { emojis.map((item, index) => (
-                <div className="card" key={index}>
-                    <button onClick={() => props.handleClick(item.name, index)}>
-                        {decodeEntity(item.htmlCode[0])}
-                    </button>
-                </div>
-            ))}
-        </div>
-    )
+        const btnStyle = matchedCardEntry ? "card-matched" : selectedCardEntry ? "card-selected" : "not-selected"
+
+        return (
+          <div className="card" key={index}>
+            <button disabled={matchedCardEntry} className={btnStyle} onClick={() => handleClick(item.name, index)}>
+                { selectedCardEntry || matchedCardEntry ? 
+                decodeEntity(item.htmlCode[0]) :
+                "?" }
+            </button>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
-

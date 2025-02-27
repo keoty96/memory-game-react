@@ -9,3 +9,18 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
+button.start-game {
+  width: unset;
+  background: #F8ED8C;
+  color: #333;
+}
+button.not-selected {
+  background: #1a1a1a;
+}
+button.card-selected {
+  background: #89AC46;
+}
+button.card-matched {
+  background: #FF8989;
+  pointer-events: none;
+}
