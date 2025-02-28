@@ -3,6 +3,8 @@ import './App.css'
 import Form from './components/Form'
 import MemoryCard from './components/MemoryCard'
 
+// const emojiURL = "https://emojihub.yurace.pro/api/all/category/animals-and-nature"
+
 function App() {
   const [isGameOn, setIsGameOn] = useState(false)
   const [emojisData, setEmojisData] = useState([])
@@ -29,7 +31,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://emojihub.yurace.pro/api/all/category/animals-and-nature");
+      const response = await fetch("/emojis.json");
 
       if (!response.ok) {
         throw new Error("Could not fetch data from API")
@@ -77,11 +79,16 @@ function App() {
   }
 
   function turnCard(name, index) {
-    const selectedCardEntry = selectedCards.find(emoji => emoji.index === index)
+    //const selectedCardEntry = selectedCards.find(emoji => emoji.index === index)
 
-    if(!selectedCardEntry && selectedCards.length < 2) {
+    // if(!selectedCardEntry && selectedCards.length < 2) {
+    //   setSelectedCards(prevState => [...prevState, {name, index}]);
+    // } else if(!selectedCardEntry && selectedCards.length === 2) {
+    //   setSelectedCards([{ name, index}])
+    // } 
+    if(selectedCards.length < 2) {
       setSelectedCards(prevState => [...prevState, {name, index}]);
-    } else if(!selectedCardEntry && selectedCards.length === 2) {
+    } else if(selectedCards.length === 2) {
       setSelectedCards([{ name, index}])
     } 
   }

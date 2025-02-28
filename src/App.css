@@ -9,6 +9,9 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
+button[disabled] {
+  color: unset;
+}
 button.start-game {
   width: unset;
   background: #F8ED8C;

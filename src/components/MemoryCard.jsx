@@ -21,7 +21,12 @@ export default function MemoryCard({
 
         return (
           <div className="card" key={index}>
-            <button disabled={matchedCardEntry} className={btnStyle} onClick={() => handleClick(item.name, index)}>
+            <button 
+            aria-label={selectedCardEntry || matchedCardEntry ? item.name : "Card Upside Down"}
+            aria-live="polite"
+            disabled={matchedCardEntry} 
+            className={btnStyle} 
+            onClick={() => selectedCardEntry ? null : handleClick(item.name, index)}>
                 { selectedCardEntry || matchedCardEntry ? 
                 decodeEntity(item.htmlCode[0]) :
                 "?" }

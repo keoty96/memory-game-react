@@ -1,0 +1,142 @@
+[
+    {
+        "name": "hugging face",
+        "category": "smileys and people",
+        "group": "face positive",
+        "htmlCode": ["&#129303;"],
+        "unicode": ["U+1F917"]
+    },
+    {
+        "name": "grinning face",
+        "category": "smileys and people",
+        "group": "face positive",
+        "htmlCode": ["&#128512;"],
+        "unicode": ["U+1F600"]
+    },
+    {
+        "name": "thumbs up",
+        "category": "smileys and people",
+        "group": "hand gestures",
+        "htmlCode": ["&#128077;"],
+        "unicode": ["U+1F44D"]
+    },
+    {
+        "name": "red heart",
+        "category": "symbols",
+        "group": "hearts",
+        "htmlCode": ["&#10084;"],
+        "unicode": ["U+2764"]
+    },
+    {
+        "name": "party popper",
+        "category": "activities",
+        "group": "celebration",
+        "htmlCode": ["&#127881;"],
+        "unicode": ["U+1F389"]
+    },
+    {
+        "name": "thinking face",
+        "category": "smileys and people",
+        "group": "face neutral",
+        "htmlCode": ["&#129300;"],
+        "unicode": ["U+1F914"]
+    },
+    {
+        "name": "rocket",
+        "category": "travel and places",
+        "group": "transport",
+        "htmlCode": ["&#128640;"],
+        "unicode": ["U+1F680"]
+    },
+    {
+        "name": "clapping hands",
+        "category": "smileys and people",
+        "group": "hand gestures",
+        "htmlCode": ["&#128079;"],
+        "unicode": ["U+1F44F"]
+    },
+    {
+        "name": "fire",
+        "category": "travel and places",
+        "group": "weather",
+        "htmlCode": ["&#128293;"],
+        "unicode": ["U+1F525"]
+    },
+    {
+        "name": "star",
+        "category": "travel and places",
+        "group": "weather",
+        "htmlCode": ["&#11088;"],
+        "unicode": ["U+2B50"]
+    },
+    {
+        "name": "winking face",
+        "category": "smileys and people",
+        "group": "face positive",
+        "htmlCode": ["&#128521;"],
+        "unicode": ["U+1F609"]
+    },
+    {
+        "name": "exploding head",
+        "category": "smileys and people",
+        "group": "face astonished",
+        "htmlCode": ["&#129327;"],
+        "unicode": ["U+1F92F"]
+    },
+    {
+        "name": "hourglass",
+        "category": "objects",
+        "group": "time",
+        "htmlCode": ["&#8987;"],
+        "unicode": ["U+231B"]
+    },
+    {
+        "name": "earth globe",
+        "category": "travel and places",
+        "group": "geography",
+        "htmlCode": ["&#127758;"],
+        "unicode": ["U+1F30E"]
+    },
+    {
+        "name": "cat face",
+        "category": "animals and nature",
+        "group": "mammals",
+        "htmlCode": ["&#128049;"],
+        "unicode": ["U+1F431"]
+    },
+    {
+        "name": "dog face",
+        "category": "animals and nature",
+        "group": "mammals",
+        "htmlCode": ["&#128054;"],
+        "unicode": ["U+1F436"]
+    },
+    {
+        "name": "sun",
+        "category": "travel and places",
+        "group": "weather",
+        "htmlCode": ["&#9728;"],
+        "unicode": ["U+2600"]
+    },
+    {
+        "name": "moon",
+        "category": "travel and places",
+        "group": "weather",
+        "htmlCode": ["&#127769;"],
+        "unicode": ["U+1F319"]
+    },
+    {
+        "name": "trophy",
+        "category": "activities",
+        "group": "award",
+        "htmlCode": ["&#127942;"],
+        "unicode": ["U+1F3C6"]
+    },
+    {
+        "name": "musical note",
+        "category": "objects",
+        "group": "music",
+        "htmlCode": ["&#127925;"],
+        "unicode": ["U+1F3B5"]
+    }
+]
