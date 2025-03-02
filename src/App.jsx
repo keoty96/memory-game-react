@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Form from './components/Form'
 import MemoryCard from './components/MemoryCard'
+import GameOver from './components/GameOver'
 
 // const emojiURL = "https://emojihub.yurace.pro/api/all/category/animals-and-nature"
 
@@ -79,13 +80,6 @@ function App() {
   }
 
   function turnCard(name, index) {
-    //const selectedCardEntry = selectedCards.find(emoji => emoji.index === index)
-
-    // if(!selectedCardEntry && selectedCards.length < 2) {
-    //   setSelectedCards(prevState => [...prevState, {name, index}]);
-    // } else if(!selectedCardEntry && selectedCards.length === 2) {
-    //   setSelectedCards([{ name, index}])
-    // } 
     if(selectedCards.length < 2) {
       setSelectedCards(prevState => [...prevState, {name, index}]);
     } else if(selectedCards.length === 2) {
@@ -93,18 +87,29 @@ function App() {
     } 
   }
 
+  function restartGame() {
+    setIsGameOn(false)
+    setSelectedCards([])
+    setMatchedCards([])
+    setIsGameOver(false)
+  }
+
   //console.log(selectedCards);
 
   return (
     <>
+    <h1>MEMORY</h1>
+     { isGameOver ? <GameOver handleClick={restartGame} /> : null }
     { isGameOn ? 
       <MemoryCard 
         handleClick={turnCard} 
         emojis={emojisData} 
         selectedCards={selectedCards}
         matchedCards={matchedCards}  
-      /> : 
-      <Form startGame={startGame} /> }
+      /> : <Form startGame={startGame} /> }
+      {
+       
+      }
     </>
   )
 }

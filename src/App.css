@@ -12,10 +12,13 @@
 button[disabled] {
   color: unset;
 }
-button.start-game {
+button.start-game,
+button.restart-game {
   width: unset;
   background: #F8ED8C;
   color: #333;
+  margin: 0 auto 20px;
+  font-size: 1.7em;
 }
 button.not-selected {
   background: #1a1a1a;
@@ -26,4 +29,8 @@ button.card-selected {
 button.card-matched {
   background: #FF8989;
   pointer-events: none;
+}
+.card button {
+  width: 2.5em;
+  height: 2.5em;
 }

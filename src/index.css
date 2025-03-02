@@ -38,15 +38,19 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 1em;
+  padding: 0.5em;
   font-size: 2em;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
   box-sizing: border-box;
-  width: 3em;
-  height: 3em;
+  min-width: 2em;
+  min-height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 button:hover {
   border-color: #646cff;
